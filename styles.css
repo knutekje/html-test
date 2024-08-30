@@ -8,6 +8,8 @@ body{
     width: 60%;
     height: 60%;
     border: solid green 2px;
+    justify-content: center;
+    align-items: center;
 }
 .rocket{
     font-size: x-large;
