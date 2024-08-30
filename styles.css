@@ -1,5 +1,19 @@
-.someBlob{
-    background-color: blanchedalmond;
-    width: 60vh;
+body{
+    width:800px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}.someblob{
+    background-color: rgb(245, 184, 93);
+    width: 60%;
+    height: 60%;
     border: solid green 2px;
+}
+.rocket{
+    font-size: x-large;
+    transform: rotate(12deg);
+    animation: backwards(2s);
+    border: solid red 2px;
+    border-radius: 10px;
+    
 }
