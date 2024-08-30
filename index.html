@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
@@ -6,10 +7,31 @@
     <body>
         <main>
         <h1>Hello fWorld</h1>
-            <div class="someblob">
-                <h1>Blinblong</h1>
+        <button name="really" class="really">Click me</button>
+        <button name="spingButton" class="spingButton">Sping</button>
+
+            <div name="someblob" class="someblob">
+                <h1 name="blinblong" class="blinblong">Blinblong</h1>
             </div>
             
     </main>
     </body>
 </html>
+<script>
+    const button = document.querySelector(".really")
+    const someblob = document.querySelector(".someblob")
+    const blinblong = document.querySelector(".blinblong")
+    const spingButton = document.querySelector(".spingButton")
+
+    const spinit = () => {
+        for (i in 360) {
+            console.log(i)
+            
+            someblob.style.transform = `rotate(${i}deg)`
+        }
+    }
+    spingButton.addEventListener('click', spinit)
+
+    button.addEventListener('click', () => { blinblong.innerHTML = "ROCKENROLL"})
+
+</script>
